@@ -1,0 +1,985 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-family: Arial;
+
+}
+
+:root {
+
+    --bg-html: #1D1C1C;
+    --gris-claro: #3f3f3f;
+    --negro-y-etiquetaSinHv: #080808;
+    --blanco: #ececec;
+    --fecha: #730DD8;
+    --ver-mas-y-etiqueta: #9747FF;
+    --acento: #AB241F;
+}
+
+/* html{
+    background-image: url(img/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+ */
+header{
+    width: 1447px;
+    height: 496px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    
+}
+
+
+body {
+    background-image: url(img/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+    background-color: var(--bg-html);
+    font-family: "Inter", sans-serif;
+}
+
+/*................. NAVBAR ..........*/
+.navbar {
+  position: fixed; /* Usar 'position' en lugar de 'display' */
+  top: 0;
+  margin-left: -54px;
+  width: 104%;
+  background-color: black;
+  padding: 10px 3%; /* Ajuste de relleno para mejor visualización */
+  z-index: 1000; /* Asegura que la navbar esté encima de otros elementos */
+}
+.menu img {
+  height: 30px;
+  padding-left: 50px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu a {
+  padding-top: 8px;
+  font-size: small;
+}
+.nav-link {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: color 0.3s;
+}
+.nav-icon img {
+  height: 25px;
+}
+.nav-link:hover {
+  color: red;
+}
+
+
+/*................. BANNER ..........*/
+.banner{
+  background-image: url(data/imgs/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    align-items: center;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 60px;
+    width: 105%;
+    height: 380px;
+}
+.banner h1{
+  color: white;
+  font-weight: 200;
+  align-items: center;
+  padding-top: 258px;
+  padding-left: 564px;
+}
+/*................. pestañas ..........*/
+.pestañas{
+  display: flex;
+  align-items: center;
+  flex-direction:row;
+  position: relative;
+  margin-top: 28px;
+  margin-left: 170px;
+}
+.pestaña img{
+  width: 300px;
+}
+#comentarios{
+  padding-right: -25px;
+}
+#informacion{
+  padding-left: 120px;
+}
+/*....................................... DESCRIPCION - INFORMACION ..........*/
+.descripcion-info {
+  margin-top: -155px;
+  width: 100%;
+  height: 1198px;
+}
+.container-DI{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  padding: 22px;
+}
+/*........................img del personaje*/
+.personaje-foto{
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.personaje-foto img{
+  width: 100%;
+}
+/*........................ contenedor de texto*/
+.contenedor-txt-info{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+  padding-right: 8%;
+  padding-left: 8%;
+  z-index: 2;
+  color: white;
+}
+.border{
+  font-weight: bolder;
+  color: white;
+}
+/*........................ texto izquierda*/
+.txt-left{
+  padding-top: 685px;
+}
+.txt-left h2{
+  font-size: 1.5rem;
+  line-height: 10%;
+  color: white;
+  margin-bottom: 30px;
+  max-width: 60%;
+  line-height: 1.2;
+  font-weight: bold;
+}
+.txt-left::after{
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 38%;
+  height: 1px;
+  top: 740px;
+  left: 8%;
+}
+.txt-left p{
+  font-size: 1rem;
+  line-height: 10%;
+  color: rgba(240, 240, 240, 0.815);
+  margin-bottom: 10px;
+  max-width: 90%;
+  line-height: 1.3;
+  font-weight: lighter;
+}
+/*........................ texto derecha*/
+.txt-right{
+  width: 100%;
+  margin-top: 0;
+}
+.txt-right img{
+  width: 90%;
+  height: 22px;
+}
+
+.txt-right .imgyt{
+  width: 90%;
+  height: auto;
+  margin-top: 100px;
+}
+
+.txt-right h1{
+  font-size: 2rem;
+  line-height: 10%;
+  color: white;
+  margin-bottom: 30px;
+  max-width: 90%;
+  line-height: 1.2;
+  font-weight: lighter;
+}
+.txt-right p{
+  font-size: 1rem;
+  line-height: 10%;
+  color: rgba(240, 240, 240, 0.815);
+  margin-bottom: 0;
+  max-width: 90%;
+  line-height: 1.3;
+  font-weight: lighter;
+}
+/*........................ etiquetas*/
+.etiquetas-info{
+  display: flex;
+  align-items: center;
+  flex-direction:row;
+  margin-bottom: 70px;
+  margin-left: 90px;
+}
+.etiquetas-info h5{
+  margin-top: 0;
+  padding-top: 120px;
+
+}
+.etqINFO-1{
+  position: relative;
+  margin-left: 20;
+  margin-right: -20px;
+  height: 22px;
+  margin-bottom: -112px;
+
+}
+.etqINFO-2{
+  position: relative;
+  margin-left: 20;
+  margin-right: -20px;
+  height: 22px;
+  margin-bottom: -112px;
+
+}
+.etqINFO-3{
+  position: relative;
+  margin-left: 20px;
+  margin-right: -20px;
+  height: 22px;
+  margin-bottom: -112px;
+
+}
+.Activo{
+  position: absolute;
+  left: -0px;
+  display: none;
+}
+.etqINFO-1:hover{
+  .Activo{
+      display: flex;
+      top: -0px;
+  }
+}
+.etqINFO-2:hover{
+  .Activo{
+      display: flex;
+      top: -0px;
+  }
+}
+.etqINFO-3:hover{
+  .Activo{
+      display: flex;
+      top: -0px;
+  }
+}
+
+.titulos-secciones {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    position: relative; /* Necesario para que el pseudo-elemento se posicione en relación al h2 */
+    margin-left: 142px;
+}
+
+.titulos-secciones::after {
+    content: "";
+    display: block;
+    width: 1190px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%; /* Coloca la línea justo debajo del h2 */
+    left: 0;
+    margin-top: 10px; /* Espacio entre el texto y la línea */
+}
+/* .titulos-secciones::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 70%;
+    height: 1px;
+    top: 5%;
+    left: 25%;
+} */
+
+
+/*  CARDS DEL JUEGO */
+
+.contenedor-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 122px;
+    margin-right: 160px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.card {
+    width: 272px;
+    height: 330px;
+    background-color: var(--gris-claro);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card img {
+    max-width: 30%;
+    border-radius: 5px;
+}
+
+.card h3 {
+  color: var(--blanco);
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    color:var(--blanco);
+}
+
+/* FICHA TECNICA */
+
+.ficha{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-left: 122px;
+    margin-right: 150px;
+    padding-top: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.ficha h3{
+    font-size: 16px;
+    color: var(--blanco);
+    margin-bottom: 5px;
+    padding: 20px;
+    text-align: left;
+}
+
+.ficha h4{
+    font-size: 14px;
+    color: var(--fecha);
+    padding: 20px;
+    margin-left: 30px;
+}
+
+.ficha ul{
+    margin-left: 40px;
+    font-size: 12px;
+}
+
+.ficha li{
+    margin-bottom: 10px;
+}
+
+.contenedor1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.plataformas{
+    border-style: groove;
+    border-width: thin;
+    color: var(--blanco);
+    background-color: var(--bg-html);
+    width: 492px;
+    height: 220;
+    border-radius: 10px;
+}
+
+.plataformas img{
+    margin-bottom: 60px;
+    margin-left: 30px;
+}
+
+.requisitos{
+    border-style: groove;
+    border-width: thin;
+    color: var(--blanco);
+    background-color: var(--bg-html);
+    width: 492px;
+    height: 346px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.contenedor2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.tiempo{
+    border-style: groove;
+    border-width: thin;
+    color: var(--blanco);
+    background-color: var(--bg-html);
+    width: 664px;
+    height: 132px;
+    border-radius: 10px;
+}
+
+.idioma{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 664px;
+    height: 280px;
+
+}
+
+.desarrollo{
+    border-style: groove;
+    border-width: thin;
+    color: var(--blanco);
+    background-color: var(--bg-html);
+    width: 664px;
+    height: 123px;
+    border-radius: 10px;
+}
+
+/* RELACIONADO  */
+
+.contenedor-tarjeta3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-left: 90px;
+    margin-right: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.contenedor-tarjeta3 h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.contenedor-tarjeta3 p {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.tarjeta3 {
+    background-color: var(--blanco);
+    border-radius: 10px;
+    width: 380px;
+    height: 300px;
+    margin: 10px;
+    margin-bottom: 20px;
+
+    
+}
+
+.tarjeta3 img {
+    width: 380px;
+}
+
+
+/*  FOOTER  */
+
+footer {
+    background-color: rgb(22, 22, 23);
+    color: white;
+    display: flex;
+    flex-wrap: wrap; /* Permite que las secciones se ajusten en líneas si no caben en una sola fila */
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total del elemento */
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+  }
+  /* Estilo de las secciones del footer */
+  .footer-section {
+    flex: 1;
+    min-width: 150px; /* Tamaño mínimo de las secciones */
+    text-align: center;
+    margin: 10px 0; /* Añade margen vertical entre las secciones */
+  }
+  /* Logo */
+  .logo img {
+    max-width: 110%; /* Asegura que la imagen no se desborde del contenedor */
+    height: auto;
+    margin-top: 30px;
+  }
+  /* Redes sociales */
+  .socialMedia {
+    margin-top: 28px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los iconos se ajusten a múltiples líneas si es necesario */
+    justify-content: center;
+    gap: 10px; /* Añade espacio entre los iconos */
+  }
+  .socialMedia img {
+    width: 20px;
+    height: 20px;
+  }
+  .redes p {
+    font-size: 0.5rem;
+  }
+  /* Relleno */
+  .relleno {
+    margin-top: 30px;
+    max-width: 100%; /* Asegura que el contenido no se desborde del contenedor */
+  }
+  .relleno p {
+    font-size: 0.8rem;
+  }
+
+
+/*  SEECION DE COMENTARIOS  */
+
+.comentarios{
+  background-image: url(/img/bannercomen.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 379px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comentarios .etqINFO-1{
+  position: relative;
+  margin-left: 20;
+  margin-right: -20px;
+  height: 22px;
+  margin-bottom: -112px;
+
+}
+.comentarios .etqINFO-2{
+  position: relative;
+  margin-left: 20;
+  margin-right: -20px;
+  height: 22px;
+  margin-bottom: -112px;
+
+}
+.comentarios .etqINFO-3{
+  position: relative;
+  margin-left: 20px;
+  margin-right: -20px;
+  height: 22px;
+  margin-bottom: -112px;
+}
+
+.comentarios .txt-right{
+  width: 100%;
+  margin-top: -97px;
+}
+.comentarios .txt-right img{
+  width: 90%;
+  height: 22px;
+}
+
+.comentarios .txt-right .imgyt{
+  width: 90%;
+  height: auto;
+  margin-top: 100px;
+}
+
+.comentarios .txt-right h1{
+  font-size: 2rem;
+  line-height: 10%;
+  color: white;
+  margin-bottom: 30px;
+  max-width: 90%;
+  line-height: 1.2;
+  font-weight: lighter;
+}
+.comentarios .txt-right p{
+  font-size: 1rem;
+  line-height: 10%;
+  color: rgba(240, 240, 240, 0.815);
+  margin-bottom: 0;
+  max-width: 90%;
+  line-height: 1.3;
+  font-weight: lighter;
+}
+/*........................ etiquetas*/
+.comentarios .etiquetas-info{
+  
+  margin-top: -86px;
+  margin-bottom: 250px;
+  margin-left: 850px;
+  color: var(--blanco);
+}
+
+.comentarios .Activo{
+  position: absolute;
+  left: -0px;
+  display: none;
+}
+
+.comentarios .etiquetas-info h5{
+  margin-top: -103px;
+  padding-top: 223px;
+
+}
+
+.img-coment{
+  margin-left: 150px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  width: 80%;
+}
+
+.ya-jugaste{
+  text-align: center;
+  padding: 22px;
+  margin-top: 160px;
+}
+
+.ya-jugaste h2{
+  color: var(--blanco);
+  font-size: 28px;
+}
+
+.ya-jugaste p{
+  margin-left: 64px;
+  color: var(--blanco);
+  font-size: 18px;
+}
+
+.reseña-ppal{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*--------------------------COMENTARIOS USER--------------------------------*/
+
+.reseña-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -277px;
+    margin-bottom: -116px;
+}
+
+.voting-section {
+    background-color: #242424;
+    color: #ececec;
+    padding: 20px;
+    border-radius: 10px;
+    border-width: thin;
+    border-style: groove;
+    border-color: #9747FF;
+    width: 80%;
+    text-align: center;
+}
+
+.voting-section h3{
+    text-align: left;
+    position: relative;
+    font-weight: 500;
+    top: -16px;
+    left: 248px;
+}
+
+.voting-section .marr{
+    position: relative;
+    top: 26px;
+    left: -394px;
+}
+
+.moradito{
+    color:#9747FF;
+}
+
+.phase {
+    display: none;
+}
+
+.phase.active {
+    display: block;
+}
+
+.phase-1 button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 340px;
+    background-color: #9747FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    top: -56px;
+    left: 316px;
+}
+
+.phase-1 button:hover {
+    background-color: #AB241F;
+}
+
+.voting-section .phase-2 h3{
+    position: relative;
+    top: -38px;
+    left: 218px;
+}
+
+.phase-2 h4{
+    position: relative;
+    font-weight: 400;
+    top: -12px;
+    left: 10px;
+}
+
+.rating button {
+    margin: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 40px;
+    transition: color 0.3s ease;
+}
+
+.rating button:hover {
+    color: #AB241F;
+}
+
+.phase-2 .marr{
+    position: relative;
+    top: 8px;
+    left: -420px;
+}
+
+.phase-3 h3{
+    position: relative;
+    top: -32px;
+    left: 160px;
+
+}
+
+.phase-3 h4{
+    color: #94E98C;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    top: -80px;
+    left: 20px;
+}
+
+.phase-3 .marr{
+    position: relative;
+    top: 8px;
+    left: -491px;
+}
+
+textarea {
+    width: 80%;
+    position: relative;
+    top: -40px;
+    left: 98px;
+    height: 80px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #9747FF;
+    background-color: #080808;
+    color: #fff;
+    resize: none;
+}
+
+.phase-3 button {
+    width: 155px;
+    height: 40px;
+    margin: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: #9747FF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    top: -8px;
+    left: -66px;
+}
+    
+
+.phase-3 button:hover {
+    background-color: #AB241F;
+}
+
+.phase-4 h3{
+    position: relative;
+    top: 0px;
+    left: 350px;
+    color: #D6B6FF;
+    font-size: 36px;
+
+}
+
+.comentarios-contenedor{
+  color: var(--blanco);
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+}
+
+.comentarios-contenedor h2{
+  margin-bottom: 30px;
+}
+
+.contenedor-izq{
+  display: flex;
+  flex-direction: column;
+  margin-left: 186px;
+  margin-bottom: 70px;
+}
+
+.contenedor-izq .fecha-izq{
+  position: relative;
+  top: -8px;
+  left: 478px;
+}
+
+.contenedor-izq .fi-num{
+  position: relative;
+  top: -24px;
+  left: 548px;
+}
+
+.contenedor-izq p{
+  margin-left: 70px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+
+.contenedor-izq h3{
+  position: relative;
+  top: -40px;
+  left: 77px;
+}
+
+.contenedor-der h3{
+  position: relative;
+  top: -25px;
+  left: 50px;
+}
+
+.contenedor-der{
+  display: flex;
+  flex-direction: column;
+  margin-left: 56px;
+  margin-bottom: 328px;
+}
+
+.contenedor-der .fecha-der{
+  position: relative;
+  top: 7px;
+  left: 218px;
+}
+
+.contenedor-der .fd-num{
+  position: relative;
+  top: -8px;
+  left: 274px;
+}
+
+.contenedor-der p{
+  margin-left: 50px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.tarjeta-izq{
+  border-radius: 10px;
+  border-style: groove;
+  border-width: thin;
+  border-color: var(--blanco);
+  width: 686px;
+  height: auto;
+  margin-bottom: 40px;
+  padding: 30px;
+  background-color: #101010;
+}
+
+.likeizq{
+  position: relative;
+  top: -10px;
+  left: 50px;
+}
+
+.denun{
+  position: relative;
+  top: -10px;
+  left: 460px;
+}
+
+.img-der{
+  position: relative;
+  top: 18px;
+  left: 0;
+}
+
+.img-izq{
+  position: relative;
+  top: 14px;
+  left: 0;
+}
+
+.likeder{
+  margin-left: 28px;
+}
+
+.tarjeta-der{
+  border-radius: 10px;
+  border-style: groove;
+  border-width: thin;
+  width: 392px;
+  height: auto;
+  margin-bottom: 40px;
+  padding: 30px;
+  background-color: var(--bg-html);
+}
+
+.contenedor-tarjeta3 a{
+  text-decoration: none;
+  color: #231F21;
+}

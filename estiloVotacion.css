@@ -1,0 +1,210 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #242424;
+
+}
+
+.votaciones{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Para centrar el contenido horizontalmente */
+  margin-top: 50px; /* margen superior de la seccion */
+  margin-bottom: 50px; /* margen inferior de la seccion */
+}
+/* Generales */
+.titleGame {
+  font-size: 35px;
+  font-weight: normal;
+}
+/* Call to action's */
+.CTA-M {
+  display: inline-block;
+  background-color: #9747FF;
+  text-decoration: none;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.CTA-M:hover {
+  background-color: #f21f1f;
+}
+.deRelleno {
+  background-color: #9747FF;
+  width: 100%;
+  height: 300px;
+}
+/* Paso */
+.paso {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.paso.active {
+  display: block;
+  opacity: 1;
+}
+/* Contenedor de tarjetas */
+.fila1, .fila2 {
+  display: flex;
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan si no caben en una fila */
+  gap: 50px; /* Espacio entre las tarjetas */
+}
+
+/* Tarjetas de votacion - paso 1, 2, 3 */
+.tarjetaA, .tarjetaB, .tarjetaC, .tarjetaD, .tarjetaE, .tarjetaF {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido de cada tarjeta */
+  border-radius: 8px;
+  overflow: hidden;
+}
+.paso1, .paso2, .paso3 {
+  position: relative;
+  max-width: 300px;
+  max-height: 450px;
+}
+.paso2 {
+  max-height: 612px;
+}
+.paso3 {
+  max-width: 300px;
+  max-height: 558px;
+}
+.contenedorIMG {
+  position: relative;
+  width: 300px;
+  height: auto; /* Cambiado a auto para ajustarse a la altura de la imagen */
+  z-index: 1;
+}
+.contenedorIMG img {
+  width: 100%; /* Ajusta al 100% del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+.contenedorDATOS {
+  position: relative;
+  display: flex;
+  margin-top: -150px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center; /* Centra el texto horizontalmente */
+  color: white;
+  padding: 20px;
+  z-index: 2;
+}
+.contenedorDATOS h4 {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 80%;
+}
+.contenedorDATOS p {
+  font-size: small;
+  padding-top: 10px;
+  font-weight: 700;
+}
+.paso1 h4{
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+.CP2{
+  margin-top: -305px;
+}
+.CP2 h5{
+ padding: 0px;
+ margin-top: 10px;
+ margin-bottom: 25px;
+}
+.paso2 h5 {
+  font-size: 1.35rem;
+  text-align: center;
+  color: #D6B6FF;
+  font-weight: 600;
+  max-width: 80%;
+}
+.paso2 h4 {
+  font-size: 0.9rem;
+  padding-top: 30px;
+  max-width: 70%;
+}
+.CP3{
+  gap: 10px;
+}
+.CP3 h5 {
+  font-size: 1.2rem !important;
+  text-align: center;
+  color: #D6B6FF;
+  font-weight: 600;
+  max-width: 80%;
+  margin-top: -80px;
+  margin-bottom: 0px;
+}
+.paso3 h6 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.CSP3 p {
+  font-size: small;
+  padding-left: 120px;
+  font-weight: 700;
+}
+.paso2 .btn {
+  display: none;
+}
+.progress-containerR2 {
+  margin-top: -20px;
+  width: 70%;
+  background-color: #5F0CB1;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.PBC3 {
+  max-width: 70% !important;
+  margin-top: -10px;
+}
+.progress-barR2 {
+  height: 6px;
+  background-color: #9747FF;
+  line-height: 30px;
+  border-radius: 25px 0 0 25px;
+}
+.BT {
+  width: 55%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: -5px;
+}
+.Anular {
+  width: 30%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  background-color: #545454;
+}
+.Anular:hover {
+  background-color: #686767;
+}
+.btnn {
+  color: white;
+  text-decoration: none;
+  margin-top: -25px;
+  font-size: small;
+  font-weight: 400;
+}
+.btnn:hover {
+  color: #9747FF;
+  text-decoration: underline;
+}
+.btnnn {
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: small;
+  font-weight: 400;
+}
+.btnnn:hover {
+  color: #9747FF;
+  text-decoration: underline;
+}

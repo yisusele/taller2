@@ -1,0 +1,534 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #242424;
+    margin: 0;
+}
+
+/*................. NAVBAR ..........*/
+.navbar {
+    position: fixed; /* Usar 'position' en lugar de 'display' */
+    top: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px 3%; /* Ajuste de relleno para mejor visualización */
+    z-index: 1000; /* Asegura que la navbar esté encima de otros elementos */
+}
+.menu img {
+    height: 30px;
+    padding-left: 50px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a {
+    padding-top: 8px;
+    font-size: small;
+}
+.nav-link {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: color 0.3s;
+}
+.nav-icon img {
+    height: 25px;
+}
+.nav-link:hover {
+    color: red;
+}
+/*................. BANNER ..........*/
+.banner{
+  background-image: url(notaData/portadaNOTA.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    align-items: center;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 60px;
+    width: 105%;
+    height: 380px;
+}
+.banner h1{
+  color: white;
+  font-weight: 200;
+  align-items: center;
+  text-align: center;
+  font-size: 2.3rem;
+  padding-top: 258px;
+}
+/*................. pestañas ..........*/
+.pestañas{
+  display: flex;
+  align-items: center;
+  flex-direction:row;
+  position: relative;
+  margin-top: 28px;
+  margin-left: 170px;
+}
+.pestaña img{
+  width: 300px;
+}
+#comentarios{
+  padding-right: -25px;
+}
+#informacion{
+  padding-left: 120px;
+}
+/*....................................... DESCRIPCION - INFORMACION ..........*/
+.descripcion-info {
+  margin-top: -155px;
+  width: 100%;
+  height: 1198px;
+}
+.testamento h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+.testamento p{
+    font-size: 1.2rem;
+    max-width: 80%;
+}
+.container-DI{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  padding: 22px;
+}
+.parte-media{
+    color: #f3f3f3;
+}
+.parte-media h2{
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 50px;
+}
+.parte-media h3{
+    font-size: 1.8rem;
+    font-style: italic;
+    text-align: center;
+    font-weight: 100;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.parte-media img{
+ margin-top: 50px;
+ margin-bottom: 50px;
+ align-items: center;
+ margin-left: 30%;
+}
+.parte-media p{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    max-width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.parte-media h5{
+    font-size: 1.2rem;
+    margin-left: 10%;
+     margin-top: 60px;
+    font-weight: 300;
+}
+/*........................ contenedor de texto*/
+.contenedor-txt-info{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+  padding-right: 8%;
+  padding-left: 8%;
+  z-index: 2;
+  color: white;
+}
+.border{
+  font-weight: bolder;
+  color: white;
+}
+/*........................ etiquetas*/
+.etiquetas-info{
+  display: flex;
+  align-items: center;
+  flex-direction:row;
+  margin-bottom: 70px;
+  gap: 20px;
+  margin-left: 220px;
+}
+.etiquetas-info h5{
+  margin-top: 0;
+  padding-top: 120px;
+  color: #fff;
+
+}
+.etqINFO-1{
+  position: relative;
+  margin-left: 20;
+  margin-right: -20px;
+  height: 22px;
+  margin-bottom: -112px;
+
+}
+.etqINFO-2{
+  position: relative;
+  margin-left: 20;
+  margin-right: -20px;
+  height: 22px;
+  margin-bottom: -112px;
+
+}
+.etqINFO-3{
+  position: relative;
+  margin-left: 20px;
+  margin-right: -20px;
+  height: 22px;
+  margin-bottom: -112px;
+
+}
+.Activo{
+  position: absolute;
+  left: -0px;
+  display: none;
+}
+.etqINFO-1:hover{
+  .Activo{
+      display: flex;
+      top: -0px;
+  }
+}
+.etqINFO-2:hover{
+  .Activo{
+      display: flex;
+      top: -0px;
+  }
+}
+.etqINFO-3:hover{
+  .Activo{
+      display: flex;
+      top: -0px;
+  }
+}
+    /*............................................................  REVIEW ............................*/
+.review{
+  background: linear-gradient(rgba(21, 21, 21, 0.5), rgba(33, 33, 33, 0.5)), 
+  url('data/imgs/fondo-review.jpg');    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 0px;    margin-top: 0;
+    width: 100%;
+    height: auto;
+}
+.autor-etiquetas{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.luis{
+  width: 53.5%;
+}
+.luis img{
+  height: 50px;
+  margin-left: 170px;
+  padding-top: 110px;
+}
+/*........................ texto*/
+.parte-superior{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-left: 182px;
+  margin-right: 90px;
+  color: #fff;
+}
+
+.testamento-completo p{
+  max-width: 90%;
+  font-size: 1.15rem;
+  line-height: 10%;
+  color: rgb(240, 240, 240);
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 10px;
+  line-height: 1.3;
+  font-weight: lighter;
+}
+
+.testamento-completo h2{
+  font-size: 1.4rem;
+  line-height: 10%;
+  color: white;
+  margin-top: 70px;
+  margin-left: 90px;
+  padding-left: 30px;
+  margin-bottom: 50px;
+  max-width: 90%;
+  font-weight: lighter;
+}
+.img-review{
+  width: 100%;
+  margin-left: 90px;
+}
+.img-review img{
+  width: 600px;
+}
+.testamento-completo h6{
+  color: #fff;
+  font-weight: 100;
+  font-style: italic;
+  margin-left: 200px;
+}
+.testamento-completo h5{
+  color: #fff;
+  margin-top: 60px;
+  margin-left: 120px;
+  font-weight: 400;
+}
+
+.testamento-completo h3{
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 70px;
+  font-weight: 400;
+}
+
+.img-review-2{
+  width: 100%;
+  margin-left: 30px;
+}
+.img-review-2 img{
+  width: 500px;
+}
+
+.img-review{
+  width: 100%;
+  margin-left: 90px;
+}
+.img-review img{
+  width: 600px;
+}
+
+.diosmio{
+  padding-left: 30px;
+}
+
+.parte-media{
+  margin-left: 92px;
+}
+
+.parte-baja{
+margin-left: 120px;
+margin-top: 80px;
+}
+.parte-baja img{
+  width: 90%;
+  margin-bottom: 40px;
+}
+/*........................ COMENTARIOS ....................................................................................*/
+.seccion-comentarios{
+  width: 100%;
+  height: 650px; /* Ajusta la altura según tus necesidades */
+  margin-top: 80px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  background-image: url('elementosReview/fondo\ comentarios.svg'); /* Ruta a la imagen */
+  background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+
+.contenedor-izq{
+ margin-left: 200px;
+ padding-top: 30px;
+
+}
+.contenedor-izq h2{
+  font-size: 2.1rem;
+  font-weight: 200;
+}
+.contenedor-izq h5{
+  font-size: 1rem;
+  font-weight: 200;
+}
+.morao{
+  color: #9747FF;
+}
+
+.likes {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+
+/*........................... comentar ......*/
+.antes h5 {
+  margin-bottom: 5px;
+}
+.caja-txt {
+  width: 557px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #f3f3f3;
+  box-sizing: border-box;
+  font-size: 16px;
+  resize: none;
+}
+.input-label {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  font-size: 16px;
+  color: #333;
+}
+.caja-txt:focus {
+  outline: none;
+  border-color: #9747FF;
+}
+.input-container {
+  position: relative;
+  width: 550px;
+}
+.char-count {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #9747FF;
+}
+.botones {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+  padding-left: 255px;
+}
+.boton {
+  display: inline-block;
+  background-color: #f21f1f;
+  text-decoration: none;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+#cancelar, #comentar {
+  padding-top: 11px;
+  width: 130px;
+  height: 30px;
+}
+#cancelar {
+  background-color: #858585;
+}
+#comentar:hover {
+  background-color: #ff3030;
+}
+#cancelar:hover {
+  background-color: #aeaeae;
+}
+/*....despues*/
+.despues {
+  margin-bottom: 500px;
+  height: 500px;
+  display: none;
+}
+.noticiasRelacionadas {
+  display: flex;
+  gap: 20px;
+}
+
+/*...........................lado derecho......*/
+.contenedor-der{
+  margin-left: 80px;
+  padding-top: 30px;
+}
+
+.comentarios img{
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.contenedor-der a{
+  color: #f3f3f3;
+  font-size: large;
+  padding-left: 440px;
+  text-decoration: none;
+}
+
+.contenedor-der a:hover{
+  color: #9747FF;
+}
+
+
+
+
+
+
+
+/*................................................ FOOTER ..............................................*/
+footer {
+  background-color: rgb(22, 22, 23);
+  color: white;
+  display: flex;
+  flex-wrap: wrap; /* Permite que las secciones se ajusten en líneas si no caben en una sola fila */
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total del elemento */
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+/* Estilo de las secciones del footer */
+.footer-section {
+  flex: 1;
+  min-width: 150px; /* Tamaño mínimo de las secciones */
+  text-align: center;
+  margin: 10px 0; /* Añade margen vertical entre las secciones */
+}
+/* Logo */
+.logo img {
+  max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+  height: auto;
+  margin-top: 30px;
+}
+/* Redes sociales */
+.socialMedia {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los iconos se ajusten a múltiples líneas si es necesario */
+  justify-content: center;
+  gap: 10px; /* Añade espacio entre los iconos */
+}
+.socialMedia img {
+  width: 20px;
+  height: 20px;
+}
+.redes p {
+  font-size: 0.5rem;
+}
+/* Relleno */
+.relleno {
+  margin-top: 30px;
+  max-width: 100%; /* Asegura que el contenido no se desborde del contenedor */
+}
+.relleno p {
+  font-size: 0.8rem;
+}

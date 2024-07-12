@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>god of war</title>
+    <link rel="stylesheet" href="style2.css">
+    <script defer src="java.js"></script>
+  </head>
+  <body>
+    
+    <header>
+      <nav class="navbar"> <!-- Barra de navegación -->
+        <div class="menu" id="menu">
+          <a href=""><img src="data/imgs/logoLUP.svg" alt=""></a>
+          <a href="#" class="nav-link">ESPORTS</a>
+          <a href="#" class="nav-link">JUEGOS</a>
+          <a href="#" class="nav-link">NOTICIAS</a>
+          <a href="#" class="nav-link">ARTICULOS</a>
+          <a href="#" class="nav-link">REVIEWS</a>
+          <a href="#" class="nav-link">LEVELUP TV</a>
+          <a href="#" class="nav-icon"><img src="data/imgs/items-narvar.svg" alt="Botón"></a>
+        </div>
+      </nav>
+      <div class="banner">
+        <h1> GOD OF WAR: Ragnarök</h1>
+        <div class="pestañas">
+            <a href="informacion.html" id="informacion" class="pestaña"><img src="data/etiquetas/infoDes.svg" alt=""></a>
+            <a href="#" id="comentarios" class="pestaña"><img src="data/etiquetas/ComentAct.svg" alt=""></a>
+            <a href="review.html" id="review" class="pestaña"><img src="data/etiquetas/RevDes.svg" alt=""></a>
+        </div>
+      </div>
+    </header>
+
+    <section  class="comentarios">
+      <div class="txt-right">
+        <div class="etiquetas-info">
+          <h5>Tags</h5>
+          <div class="etqINFO-3">
+            <img src="data/etiquetas/E3D.svg" alt="desactivada" id="D-3">
+            <img src="data/etiquetas/E3A.svg" alt="activada" class="Activo">
+          </div>
+          <div class="etqINFO-2">
+              <img src="data/etiquetas/E2D.svg" alt="desactivada" id="D-2">
+              <img src="data/etiquetas/E2A.svg" alt="activada" class="Activo">
+          </div>
+          <div class="etqINFO-1">
+            <img src="data/etiquetas/E1D.svg" alt="desactivada" id="D-1">
+            <img src="data/etiquetas/E1A.svg" alt="activada" class="Activo">
+          </div>
+        </div>
+        <div class="ya-jugaste">
+      <h2>¿Ya jugaste al juego?</h2>
+      <p>¡Ve las reseñas de otros usuarios y comparte la tuya!</p>
+    </div>
+    </section>
+
+    <section class="reseña-ppal">
+      <img src="img/reseñageneral.svg" class="img-coment" alt="">
+    </section>
+
+    <section class="reseña-user">
+      <div class="voting-section" id="votingSection">
+        <!-- Fase 1: Inicio de votación -->
+        <div class="phase phase-1" id="phase1">
+            <img src="/img/profile.svg" class="marr" alt="">
+            <h3><span class="moradito"> Reseñar como</span> marr_08</h3>
+            <button onclick="startVoting()">Calificar juego</button>
+        </div>
+        
+        <!-- Fase 2: Votación -->
+        <div class="phase phase-2" id="phase2">
+            <img src="/img/profile.svg" class="marr" alt="">
+            <h3><span class="moradito"> Reseñar como</span> marr_08</h3>
+            <h4>¿Cuánto le das a este juego?</h4>
+            <div class="rating">
+                <!-- Botones de votación del 1 al 10 -->
+                <button onclick="selectRating(1)">1</button>
+                <button onclick="selectRating(2)">2</button>
+                <button onclick="selectRating(3)">3</button>
+                <button onclick="selectRating(4)">4</button>
+                <button onclick="selectRating(5)">5</button>
+                <button onclick="selectRating(6)">6</button>
+                <button onclick="selectRating(7)">7</button>
+                <button onclick="selectRating(8)">8</button>
+                <button onclick="selectRating(9)">9</button>
+                <button onclick="selectRating(10)">10</button>
+            </div>
+        </div>
+        
+        <!-- Fase 3: Enviar comentario -->
+        <div class="phase phase-3" id="phase3">
+            <img src="/img/profile.svg" class="marr" alt="">
+            <h3><span class="moradito"> Reseñar como</span> marr_08</h3>
+            <h4>¡Tú calificación ha sido registrada!</h4>
+            <textarea id="comment" placeholder="Escribe tu comentario aquí..."></textarea>
+            <button onclick="submitComment()">Comentar</button>
+        </div>
+        
+        <!-- Fase 4: Agradecimiento -->
+        <div class="phase phase-4" id="phase4">
+            <h3>¡Gracias por tu voto y comentario!</h3>
+        </div>
+    </div>
+    </section>
+   
+    <section class="comentarios-contenedor">
+
+      <div  class="contenedor-izq">
+        <h2>Reseñas Destacadas</h2>
+        <div class="tarjeta-izq">
+          <img src="img/imgc-1.png" class="img-izq" alt="">
+          <img src="/img/fechab.svg" class="fecha-izq" alt="">
+          <h6 class="fi-num">10 Nov 2022</h6>
+          <h3>Detokanaito</h3>
+          <p>Los felicito mucho Santa Mónica Studio y a Sony por haber hecho esto juegazo, la verdad que quede muy impresionado por los gráficos ya que juego en PS4, su jugabilidad, sus funciones de accesibilidad. Yo por mi parte no he tenido oportunidad de jugar los anteriores juegos del Fantasma de Esparta, pero con GOW 4 y Ragnarök me he quedado satisfecho.</p>
+          <img src="/img/likeizq-1.svg" class="likeizq" alt="">
+          <img src="/img/com-den.svg" class="denun" alt=""> 
+        </div>
+
+        <div class="tarjeta-izq">
+          <img src="img/imgc-2.png" class="img-izq" alt="">
+          <img src="/img/fechab.svg" class="fecha-izq" alt="">
+          <h6 class="fi-num">31 Dic 2023</h6>
+          <h3>LiveBlack</h3>
+          <p>"¡Este juego superó todas mis expectativas! La jugabilidad es increíble y la historia me mantuvo enganchado desde el principio. Cada nivel presenta desafíos únicos y emocionantes, mientras que los gráficos detallados y la banda sonora cautivadora crean una atmósfera inmersiva. ¡Definitivamente uno de los mejores juegos que he jugado en mucho tiempo!"</p>
+          <img src="/img/likeizq-2.svg" class="likeizq" alt="">
+          <img src="/img/com-den.svg" class="denun" alt=""> 
+        </div>
+
+        <div class="tarjeta-izq">
+          <img src="img/imgc-3.png" class="img-izq" alt="">
+          <img src="/img/fechab.svg" class="fecha-izq" alt="">
+          <h6 class="fi-num">09 Mar 2023</h6>
+          <h3>Santiago Escalona</h3>
+          <p>"¡Una experiencia de juego inolvidable! Los gráficos son espectaculares y la música es simplemente impresionante. Cada aspecto del juego, desde la narrativa hasta la mecánica de juego, ha sido cuidadosamente elaborado para ofrecer una experiencia de juego excepcional. ¡Recomiendo este juego a todos los amantes de los videojuegos que buscan una aventura emocionante y emocionante!"</p>
+          <img src="/img/likeizq-3.svg" class="likeizq" alt="">
+          <img src="/img/com-den.svg" class="denun" alt=""> 
+        </div>
+
+        <div class="tarjeta-izq">
+          <img src="img/imgc-4.png" class="img-izq" alt="">
+          <img src="/img/fechab.svg" class="fecha-izq" alt="">
+          <h6 class="fi-num">15 Mar 2023</h6>
+          <h3>Miyamotomusaxii.0</h3>
+          <p>"¡No puedo dejar de jugar a este juego! Cada nivel es desafiante y emocionante, y la variedad de personajes y escenarios hace que nunca me aburra. La progresión del juego es perfecta, ofreciendo un equilibrio perfecto entre desafío y diversión. Con una jugabilidad adictiva y una historia envolvente, este juego se ha convertido en uno de mis favoritos. ¡Un must-play para cualquier amante de los videojuegos!"</p>
+          <img src="/img/likeizq-4.svg" class="likeizq" alt="">
+          <img src="/img/com-den.svg"  class="denun"alt=""> 
+        </div>
+
+      </div>
+
+
+      <div  class="contenedor-der">
+        <h2>Recientes</h2>
+        <div class="tarjeta-der">
+          <img src="img/imgc-5.png" class="img-der" alt="">
+          <img src="/img/fechab.svg" class="fecha-der" alt="">
+          <h6 class="fd-num">01 Jul 2024</h6>
+          <h3>Danilu22___atk</h3>
+          <p>Simplemente épico.</p>
+          <img src="/img/likeder.svg" class="likeder" alt="">
+        </div>
+
+        <div class="tarjeta-der">
+          <img src="img/imgc-6.png" class="img-der" alt="">
+          <img src="/img/fechab.svg" class="fecha-der" alt="">
+          <h6 class="fd-num">29 Jun 2024</h6>
+          <h3>Pedrokun_22</h3>
+          <p>Un emocionante juego que te sumerge en un mundo vibrante lleno de misterios por descubrir. Aventuras épicas te esperan en cada esquina, junto con desafíos que pondrán a prueba tu destreza y astucia. ¡Prepárate para una experiencia inolvidable!</p>
+          <img src="/img/likeder.svg" class="likeder" alt="">
+        </div>
+
+        <div class="tarjeta-der">
+          <img src="img/imgc-7.png" class="img-der" alt="">
+          <img src="/img/fechab.svg" class="fecha-der" alt="">
+          <h6 class="fd-num">27 Jun 2024</h6>
+          <h3>Valentine823</h3>
+          <p>Este juego destaca por sus impresionantes gráficos que te transportan a paisajes asombrosos y personajes detallados. La jugabilidad es fluida y adictiva, manteniéndote enganchado durante horas. </p>
+          <img src="/img/likeder.svg" class="likeder" alt="">
+        </div>
+
+        
+      </div>
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <footer>
+    <div class="footer-section logo">
+       <img src="/img/levelupLogo.png" alt="">
+    </div>
+    <div class="footer-section redes">
+       <div class="socialMedia">
+         <a href="https://www.instagram.com/levelupcom/"><img src="/img/instagram.png" alt=""></a>
+         <a href="https://www.tiktok.com/@levelupcom"><img src="/img/tiktok.png" alt=""></a>
+         <a href="https://www.facebook.com/LevelUPcom/"><img src="/img/face.png" alt=""></a>
+         <a href="https://x.com/LevelUpCom"><img src="/img/twitter.png" alt=""></a>
+         <a href="https://www.youtube.com/user/levelupcom"><img src="/img/youtube.png" alt=""></a>
+         <a href="https://discord.com/invite/bJcyjh8"><img src="/img/discord.png" alt=""></a>
+       </div>
+       <h6>Siguenos</h6>
+       <p>www.levelup.com y el logotipo de LEVELUP son marcas registradas. Derechos Reservados © LEVELUP.COM S de R.L. de C.V</p>
+    </div>
+    <div class="footer-section relleno">
+       <img src="/img/miau.png" alt="">
+       <p>Texto| contacto| reporte| Terminos</p>
+    </div>
+  </footer>
+
+
+    <script src="scripts.js"></script>
+    
+  </body>
+
+
+</html>
